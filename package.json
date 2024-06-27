@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
-    "build": "ncc build src/server.js -o dist"
+    "build": "ncc build src/smee-client.js -o dist"
   },
   "keywords": [],
   "author": "",
