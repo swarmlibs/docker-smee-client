@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^12.1.0",
     "smee-client": "^2.0.1"
   },
   "devDependencies": {
