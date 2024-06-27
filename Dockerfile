@@ -8,5 +8,6 @@ RUN --mount=type=bind,source=.,target=/app,rw <<EOF
 EOF
 
 FROM node:22-alpine
-COPY --from=builder /dist/index.js /smee-client
-CMD [ "/smee-client" ]
+COPY --from=builder /dist/index.js /bin/smee-client
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+ENTRYPOINT [ "/docker-entrypoint.sh" ]
