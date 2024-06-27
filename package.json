@@ -17,5 +17,6 @@
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
     "rimraf": "^5.0.7"
-  }
+  },
+  "packageManager": "pnpm@9.4.0"
 }
