@@ -1,4 +1,4 @@
-FROM node:22-alpine AS builder
+FROM --platform=$BUILDPLATFORM node:22-alpine AS builder
 
 RUN --mount=type=bind,source=.,target=/app,rw <<EOF
   corepack disable && corepack enable
